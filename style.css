@@ -91,15 +91,20 @@ button {
     background-position: center;
 }
 .overlay a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 5em;
+    width: 70px;
     background-color: white;
-    border-radius: 30px;
-    padding: 5px 10px;
+    border-radius: 100px;
+    padding: 5px 10px 10px 10px;
 }
 
 .yes {
     background-color: rgb(202, 249, 255);
-
+    background-image: url('yes.png');
 }
 
 .no {
