@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'HydrogenType';
+    src: url('HydrogenType.woff2') format('woff2'),
+        url('HydrogenType.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: red;
+    background-color: white;
+    padding: 10px 5px;
+}
+.background{
+    background-color: white;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: url("https://media0.giphy.com/media/xT0xepIsg7kK2ZZO0g/giphy.webp?cid=6c09b952223709dff99ddb837415036977e0d4efe695f783&rid=giphy.webp&ct=g");
+    background-blend-mode: hard-light;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    z-index: -10;
+    /* filter: blur(3px); */
+
+}
+
+h1 {
+    font-family: 'HydrogenType';
+    font-size: 4em;
+    line-height: .8em;
+    padding: 20px;
+    letter-spacing: -3px;
+}
+
+h2,
+p {
+    font-weight: normal;
+    font-family: 'HydrogenType';
+    letter-spacing: -2px;
+    padding: 20px;
+
+
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+button {
+    font-family: 'HydrogenType';
+    font-size: 2em;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    color: white;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    /* transform: translateY(-100%); */
+    transition: all 200ms ease-in-out;
+    pointer-events: none;
+    background-color: rgb(218, 218, 218);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overlay a {
+    font-size: 5em;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.yes {
+    background-color: rgb(202, 249, 255);
+
+}
+
+.no {
+    background-color: palegreen;
+    background-image: url('1.png');
+    
+}
+.maybe {
+    background-color: rgb(15, 207, 255);
+    background-image: url('2.jpeg');
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: all;
+}
