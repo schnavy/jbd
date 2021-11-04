@@ -19,6 +19,7 @@ body {
     color: red;
     background-color: white;
     padding: 10px;
+    max-height: 100vh;
 }
 .background{
     background-color: white;
